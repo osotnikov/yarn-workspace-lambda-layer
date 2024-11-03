@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import { App } from "@aws-cdk/core";
 import { InfrastructureStack } from "../lib/infrastructure-stack";
+import {App} from "aws-cdk-lib";
 
 const app = new App();
 

@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
-    "inlineSourceMap": true,
-    "inlineSources": true,
+    "sourceMap": true,
+//    "inlineSourceMap": true,
+//    "inlineSources": true,
     "module": "commonjs",
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,

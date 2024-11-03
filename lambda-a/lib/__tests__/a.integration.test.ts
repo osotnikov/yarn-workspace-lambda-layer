@@ -7,7 +7,7 @@ test("Is it tomorrow?", async () => {
   try {
     expect.assertions(1);
 
-    const invokeCommand = new InvokeCommand({ FunctionName: "A" });
+    const invokeCommand = new InvokeCommand({ FunctionName: "aLambda" });
 
     const invokeCommandResponse = await lambda.send(invokeCommand);
 
@@ -24,7 +24,7 @@ test("Is it tomorrow?", async () => {
     } else {
       throw new Error("No response payload");
     }
-  } catch (error) {
+  } catch (error: any) {
     throw new Error(error);
   }
 });

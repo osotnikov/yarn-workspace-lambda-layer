@@ -1,6 +1,6 @@
-import "@aws-cdk/assert/jest";
-import { App } from "@aws-cdk/core";
 import { InfrastructureStack } from "../infrastructure-stack";
+import {App} from 'aws-cdk-lib';
+import { Template } from 'aws-cdk-lib/assertions';
 
 let stack: InfrastructureStack;
 
@@ -10,18 +10,20 @@ beforeAll(() => {
   stack = new InfrastructureStack(app, "InfrastructureStack");
 });
 
-test("Stack has A Lambda resource", () => {
-  expect(stack).toHaveResource("AWS::Lambda::Function", {
-    FunctionName: "A",
-    Handler: "a.handler",
-    Runtime: "nodejs12.x"
-  });
-});
+test("Stack has Lambda resources", () => {
 
-test("Stack has B Lambda resource", () => {
-  expect(stack).toHaveResource("AWS::Lambda::Function", {
-    FunctionName: "B",
-    Handler: "b.handler",
-    Runtime: "nodejs12.x"
+  const template = Template.fromStack(stack);
+
+  template.hasResourceProperties('AWS::Lambda::Function', {
+    FunctionName: "aLambda",
+    Handler: "index.handler",
+    Runtime: "nodejs20.x"
   });
+
+  template.hasResourceProperties("AWS::Lambda::Function", {
+    FunctionName: "bLambda",
+    Handler: "index.handler",
+    Runtime: "nodejs20.x"
+  });
+
 });

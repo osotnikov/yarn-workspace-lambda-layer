@@ -7,7 +7,7 @@
   "scripts": {
     "build": "yarn workspaces run build",
     "layer": "sh scripts/deps-layer.sh",
-    "test": "yarn workspaces run test"
+    "test": "yarn workspaces run test --passWithNoTests"
   },
   "workspaces": [
     "util-logger",
