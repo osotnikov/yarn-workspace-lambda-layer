@@ -15,3 +15,4 @@ cdk.out
 **/lib/**/*.d.ts
 **/lib/**/*.js
 lambda-layer/nodejs/**
+/.idea/
