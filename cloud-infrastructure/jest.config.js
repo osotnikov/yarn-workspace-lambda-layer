@@ -1,6 +1,7 @@
 module.exports = {
   modulePathIgnorePatterns: ["cdk.out"],
-  testMatch: ["**/*.unit.test.ts"],
+  testMatch: ["**/*.test.ts"],
+  testPathIgnorePatterns: [".*infrastructure\.test\.ts"],
   transform: {
     "^.+\\.tsx?$": "ts-jest"
   }
