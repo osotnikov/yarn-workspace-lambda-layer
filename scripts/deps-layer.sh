@@ -1,15 +1,15 @@
 #!/bin/sh
 
 # Install Yarn workspace dependencies to Lambda Layer directory
-yarn install --flat --ignore-platform --modules-folder lambda-layer/nodejs/node_modules --no-progress --non-interactive --production --silent
+yarn install --modules-folder lambda-layer/nodejs/node_modules --production
 
 # Remove workspace directories from Lambda Layer node_modules
 # to prevent circular references
-rm -rf \
-  lambda-layer/nodejs/node_modules/cloud-infrastructure \
-  lambda-layer/nodejs/node_modules/lambda-a \
-  lambda-layer/nodejs/node_modules/lambda-b \
-  lambda-layer/nodejs/node_modules/util-logger
+#  lambda-layer/nodejs/node_modules/cloud-infrastructure \
+#rm -rf \
+#  lambda-layer/nodejs/node_modules/lambda-a \
+#  lambda-layer/nodejs/node_modules/lambda-b \
+#  lambda-layer/nodejs/node_modules/util-logger
 
 # Copy common utilities
 cp -r util-logger/bin/ lambda-layer/nodejs/util-logger
