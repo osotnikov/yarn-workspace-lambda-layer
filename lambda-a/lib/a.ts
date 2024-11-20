@@ -8,6 +8,7 @@ export const handler: Handler = async () => {
   logger(tomorrow);
 
   return {
-    tomorrow: tomorrow
+    'statusCode': 200,
+    'body': tomorrow
   };
 };

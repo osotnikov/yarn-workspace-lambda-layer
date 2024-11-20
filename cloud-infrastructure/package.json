@@ -9,7 +9,10 @@
     "diff": "cdk diff",
     "synth": "cdk synth",
     "test": "jest",
-    "watch": "tsc -w"
+    "watch": "tsc -w",
+    "samin": "sam local invoke -t ./cdk.out/YarnWorkspaceLambdaLayer.template.json aLambda",
+    "samsa": "sam local start-api -t ./cdk.out/YarnWorkspaceLambdaLayer.template.json",
+    "samsl": "sam local start-lambda -t ./cdk.out/YarnWorkspaceLambdaLayer.template.json"
   },
   "devDependencies": {
     "@types/jest": "29.5.13",

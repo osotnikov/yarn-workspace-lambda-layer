@@ -22,3 +22,12 @@ This repo demonstrates the use of Yarn workspaces with Lambda layers using two L
 <p align="center">
   <img width="568" alt="yarn-workspace-lambda-layer-example" src="https://user-images.githubusercontent.com/1913316/77856931-7825f800-71f2-11ea-980e-d1c966ce2294.png">
  </p>
+
+** invoke sam
+
+for 
+`sam local start-lambda -t ./cdk.out/YarnWorkspaceLambdaLayer.template.json`
+
+you have to hit the following endpoint
+
+http://127.0.0.1:3001/2015-03-31/functions/aLambda/invocations
