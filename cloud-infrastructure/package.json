@@ -11,8 +11,9 @@
     "test": "jest",
     "watch": "tsc -w",
     "samin": "sam local invoke -t ./cdk.out/YarnWorkspaceLambdaLayer.template.json aLambda",
-    "samsa": "sam local start-api -t ./cdk.out/YarnWorkspaceLambdaLayer.template.json",
-    "samsl": "sam local start-lambda -t ./cdk.out/YarnWorkspaceLambdaLayer.template.json"
+    "samsa": "sam local start-api --docker-network lambda-net -t ./cdk.out/YarnWorkspaceLambdaLayer.template.json",
+    "samsl": "sam local start-lambda --docker-network lambda-net -t ./cdk.out/YarnWorkspaceLambdaLayer.template.json",
+    "ddb_local": "docker run --rm --name ddb --network lambda-net -p 8000:8000 amazon/dynamodb-local -jar DynamoDBLocal.jar -sharedDb"
   },
   "devDependencies": {
     "@types/jest": "29.5.13",

@@ -5,6 +5,7 @@ import {Code, LayerVersion, Runtime} from "aws-cdk-lib/aws-lambda";
 import * as nodeLambda from 'aws-cdk-lib/aws-lambda-nodejs';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as path from "path";
+import * as dynamodb from 'aws-cdk-lib/aws-dynamodb';
 
 export class InfrastructureStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
@@ -15,14 +16,6 @@ export class InfrastructureStack extends cdk.Stack {
       compatibleRuntimes: [Runtime.NODEJS_20_X]
     });
 
-    // new Function(this, "ALambda", {
-    //   code: Code.fromAsset("../lambda-a/bin"),
-    //   functionName: "A",
-    //   handler: "a.handler",
-    //   layers: [dependenciesLayer],
-    //   runtime: Runtime.NODEJS_20_X
-    // });
-
     const lambdaAppDir = path.resolve(__dirname, '../../')
     const aLambda: nodeLambda.NodejsFunction =
       new nodeLambda.NodejsFunction(this, 'ALambda', {
@@ -31,25 +24,12 @@ export class InfrastructureStack extends cdk.Stack {
         layers: [dependenciesLayer],
         depsLockFilePath: path.join(lambdaAppDir, 'yarn.lock'),
         entry: path.join(lambdaAppDir, 'lambda-a/bin/a.js'),
-        // entry: path.join(
-        //     __dirname,
-        //     '../../lambda-a/bin'
-        // ),
         memorySize: 1024,
         handler: 'handler',
         environment: {
           LOG_LEVEL: 'DEBUG',
         },
       });
-
-    // new Function(this, "BLambda", {
-    //   code: Code.fromAsset("../lambda-b/bin"),
-    //   functionName: "B",
-    //   handler: "b.handler",
-    //   layers: [dependenciesLayer],
-    //   runtime: Runtime.NODEJS_20_X
-    // });
-
 
     const bLambda: nodeLambda.NodejsFunction =
         new nodeLambda.NodejsFunction(this, 'BLambda', {
@@ -92,5 +72,11 @@ export class InfrastructureStack extends cdk.Stack {
           proxy: true,
         })
     );
+
+    // dynamodb
+      new dynamodb.Table(this, 'Table', {
+          partitionKey: { name: 'username', type: dynamodb.AttributeType.STRING },
+          billingMode: dynamodb.BillingMode.PAY_PER_REQUEST,
+      });
   }
 }
