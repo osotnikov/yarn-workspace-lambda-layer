@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const infrastructure_stack_1 = require("./infrastructure-stack");
+const aws_cdk_lib_1 = require("aws-cdk-lib");
+const app = new aws_cdk_lib_1.App();
+new infrastructure_stack_1.InfrastructureStack(app, "YarnWorkspaceLambdaLayer");
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5mcmFzdHJ1Y3R1cmUuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJpbmZyYXN0cnVjdHVyZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFDQSxpRUFBNkQ7QUFDN0QsNkNBQWtDO0FBRWxDLE1BQU0sR0FBRyxHQUFHLElBQUksaUJBQUcsRUFBRSxDQUFDO0FBRXRCLElBQUksMENBQW1CLENBQUMsR0FBRyxFQUFFLDBCQUEwQixDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyIjIS91c3IvYmluL2VudiBub2RlXG5pbXBvcnQgeyBJbmZyYXN0cnVjdHVyZVN0YWNrIH0gZnJvbSBcIi4vaW5mcmFzdHJ1Y3R1cmUtc3RhY2tcIjtcbmltcG9ydCB7IEFwcCB9IGZyb20gXCJhd3MtY2RrLWxpYlwiO1xuXG5jb25zdCBhcHAgPSBuZXcgQXBwKCk7XG5cbm5ldyBJbmZyYXN0cnVjdHVyZVN0YWNrKGFwcCwgXCJZYXJuV29ya3NwYWNlTGFtYmRhTGF5ZXJcIik7XG4iXX0=

@@ -1,0 +1,10 @@
+{
+  "aLambda": {
+    "api_key": "123456789",
+    "BUCKET_NAME": "testBucket"
+  },
+  "bLambda": {
+    "api_key": "123456789",
+    "BUCKET_NAME": "testBucket"
+  }
+}

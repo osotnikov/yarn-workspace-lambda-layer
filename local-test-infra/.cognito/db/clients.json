@@ -1,0 +1,16 @@
+{
+  "Clients": {
+    "11p2thtwfx6sh0z435im7c18z": {
+      "ClientId": "11p2thtwfx6sh0z435im7c18z",
+      "ClientName": "usrpc",
+      "CreationDate": "2024-11-27T23:13:58.083Z",
+      "LastModifiedDate": "2024-11-27T23:13:58.083Z",
+      "TokenValidityUnits": {
+        "AccessToken": "hours",
+        "IdToken": "minutes",
+        "RefreshToken": "days"
+      },
+      "UserPoolId": "usrp"
+    }
+  }
+}
