@@ -1,5 +1,5 @@
 {
-  "name": "util-logger",
+  "name": "lambda-common",
   "private": true,
   "version": "0.0.0",
   "main": "bin/logger.js",

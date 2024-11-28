@@ -12,7 +12,7 @@
     "noUnusedParameters": true,
     "outDir": "bin",
     "paths": {
-      "/opt/nodejs/*": ["../lambda-common/bin/*"]
+      "/opt/nodejs/*": ["../*"]
     },
     "strict": true,
     "target": "ES2018",

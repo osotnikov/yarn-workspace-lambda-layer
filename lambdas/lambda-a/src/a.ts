@@ -11,7 +11,7 @@ import {
   // GetCommand,
 } from "@aws-sdk/lib-dynamodb";
 import { addDays } from "date-fns";
-import { logger } from "/opt/nodejs/logger";
+import { logger } from "/opt/nodejs/lambda-common";
 import { UserDto } from "./UserDto";
 
 export const handler: APIGatewayProxyHandler = async (event: APIGatewayProxyEventBase<APIGatewayEventDefaultAuthorizerContext>): Promise<APIGatewayProxyResult> => {
