@@ -14,8 +14,8 @@
     "samsa": "sam local start-api --docker-network lambda-net -t ./cdk.out/YarnWorkspaceLambdaLayer.template.json",
     "samsl": "sam local start-lambda --docker-network lambda-net -t ./cdk.out/YarnWorkspaceLambdaLayer.template.json",
     "ddb_local": "docker run --rm --name ddb --network lambda-net -p 8000:8000 amazon/dynamodb-local -jar DynamoDBLocal.jar -sharedDb",
-    "init": "./local-testing/init.sh",
-    "destroy": "./local-testing/destroy.sh"
+    "init": "setup-scripts/init.sh",
+    "destroy": "setup-scripts/destroy.sh"
   },
   "devDependencies": {
     "@types/jest": "29.5.13",

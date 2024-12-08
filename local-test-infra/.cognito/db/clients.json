@@ -11,6 +11,42 @@
         "RefreshToken": "days"
       },
       "UserPoolId": "usrp"
+    },
+    "03zab1tw0s9yhix0e8w48h39o": {
+      "ClientId": "03zab1tw0s9yhix0e8w48h39o",
+      "ClientName": "usrpc",
+      "CreationDate": "2024-12-07T21:38:00.184Z",
+      "LastModifiedDate": "2024-12-07T21:38:00.184Z",
+      "TokenValidityUnits": {
+        "AccessToken": "hours",
+        "IdToken": "minutes",
+        "RefreshToken": "days"
+      },
+      "UserPoolId": "\"local_4pAqiE5u\""
+    },
+    "2actyhgkd2i1hp5hcibpq9s9f": {
+      "ClientId": "2actyhgkd2i1hp5hcibpq9s9f",
+      "ClientName": "usrpc",
+      "CreationDate": "2024-12-07T21:38:19.860Z",
+      "LastModifiedDate": "2024-12-07T21:38:19.860Z",
+      "TokenValidityUnits": {
+        "AccessToken": "hours",
+        "IdToken": "minutes",
+        "RefreshToken": "days"
+      },
+      "UserPoolId": "1233"
+    },
+    "2ppyv5ix5145vwwrp5g8rjn9z": {
+      "ClientId": "2ppyv5ix5145vwwrp5g8rjn9z",
+      "ClientName": "usrpc",
+      "CreationDate": "2024-12-07T21:42:25.830Z",
+      "LastModifiedDate": "2024-12-07T21:42:25.830Z",
+      "TokenValidityUnits": {
+        "AccessToken": "hours",
+        "IdToken": "minutes",
+        "RefreshToken": "days"
+      },
+      "UserPoolId": "local_2UR0mK53"
     }
   }
 }
