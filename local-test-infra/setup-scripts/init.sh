@@ -42,4 +42,4 @@ export USER_POOL_CLIENT_ID=`aws --endpoint http://localhost:9229 cognito-idp cre
 #npm run synth
 
 # start lambdas
-sam local start-api --warm-containers EAGER --debug --docker-network $DOCKER_NET -t ./cdk.out/YarnWorkspaceLambdaLayer.template.json --parameter-overrides ParameterKey=COGNITO_CLIENT_ID,ParameterValue=$USER_POOL_CLIENT_ID ParameterKey=AWS_REGION,ParameterValue=$AWS_DEFAULT_REGION
+sam local start-api --debug --docker-network $DOCKER_NET -t ./cdk.out/YarnWorkspaceLambdaLayer.template.json --parameter-overrides ParameterKey=COGNITO_CLIENT_ID,ParameterValue=$USER_POOL_CLIENT_ID ParameterKey=AWS_REGION,ParameterValue=$AWS_DEFAULT_REGION

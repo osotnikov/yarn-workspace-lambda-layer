@@ -47,6 +47,66 @@
         "RefreshToken": "days"
       },
       "UserPoolId": "local_2UR0mK53"
+    },
+    "7hl2h3mq1tx4hyfiua8yfcyo9": {
+      "ClientId": "7hl2h3mq1tx4hyfiua8yfcyo9",
+      "ClientName": "usrpc",
+      "CreationDate": "2024-12-08T20:52:17.484Z",
+      "LastModifiedDate": "2024-12-08T20:52:17.484Z",
+      "TokenValidityUnits": {
+        "AccessToken": "hours",
+        "IdToken": "minutes",
+        "RefreshToken": "days"
+      },
+      "UserPoolId": "local_72dZysf0"
+    },
+    "ak62kbuaj3iab58hryomq3k2q": {
+      "ClientId": "ak62kbuaj3iab58hryomq3k2q",
+      "ClientName": "usrpc",
+      "CreationDate": "2024-12-08T21:05:03.189Z",
+      "LastModifiedDate": "2024-12-08T21:05:03.189Z",
+      "TokenValidityUnits": {
+        "AccessToken": "hours",
+        "IdToken": "minutes",
+        "RefreshToken": "days"
+      },
+      "UserPoolId": "local_0UALVCgh"
+    },
+    "1hk2my8c2qbc262v14pqavfbt": {
+      "ClientId": "1hk2my8c2qbc262v14pqavfbt",
+      "ClientName": "usrpc",
+      "CreationDate": "2024-12-08T21:07:02.512Z",
+      "LastModifiedDate": "2024-12-08T21:07:02.512Z",
+      "TokenValidityUnits": {
+        "AccessToken": "hours",
+        "IdToken": "minutes",
+        "RefreshToken": "days"
+      },
+      "UserPoolId": "local_6W0IO4xk"
+    },
+    "f0r92xdg8iz7nbsbiiludih82": {
+      "ClientId": "f0r92xdg8iz7nbsbiiludih82",
+      "ClientName": "usrpc",
+      "CreationDate": "2024-12-08T21:17:16.134Z",
+      "LastModifiedDate": "2024-12-08T21:17:16.134Z",
+      "TokenValidityUnits": {
+        "AccessToken": "hours",
+        "IdToken": "minutes",
+        "RefreshToken": "days"
+      },
+      "UserPoolId": "local_14drkNih"
+    },
+    "5fyd3kg3s94i1vx0s71kdghws": {
+      "ClientId": "5fyd3kg3s94i1vx0s71kdghws",
+      "ClientName": "usrpc",
+      "CreationDate": "2024-12-08T21:41:49.771Z",
+      "LastModifiedDate": "2024-12-08T21:41:49.771Z",
+      "TokenValidityUnits": {
+        "AccessToken": "hours",
+        "IdToken": "minutes",
+        "RefreshToken": "days"
+      },
+      "UserPoolId": "local_1pyW4Nl6"
     }
   }
 }
