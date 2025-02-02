@@ -16,3 +16,6 @@ cdk.out
 **/lib/**/*.js
 lambda-layer/nodejs/**
 /.idea/
+/lambdas/lambda-a/bin/a.js.map
+/lambdas/lambda-b/bin/b.js.map
+/local-test-infra/.cognito/db/local_6JMrAf1i.json
