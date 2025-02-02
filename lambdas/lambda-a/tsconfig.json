@@ -1,22 +1,11 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
     "sourceMap": true,
-    //"sourceMaps": "inline",
-//    "inlineSourceMap": true,
-//    "inlineSources": true,
     "module": "commonjs",
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "esModuleInterop": true,
     "outDir": "bin",
-    "paths": {
-      "/opt/nodejs/*": ["../*"]
-    },
     "strict": true,
-    "target": "ES2018",
-    "typeRoots": ["../../node_modules/@types"]
+    "target": "ES2018"
   },
   "exclude": ["**/__tests__"]
 }

@@ -107,6 +107,18 @@
         "RefreshToken": "days"
       },
       "UserPoolId": "local_1pyW4Nl6"
+    },
+    "77i291e5v27mhd34r74vfoa05": {
+      "ClientId": "77i291e5v27mhd34r74vfoa05",
+      "ClientName": "usrpc",
+      "CreationDate": "2025-02-02T23:10:04.422Z",
+      "LastModifiedDate": "2025-02-02T23:10:04.422Z",
+      "TokenValidityUnits": {
+        "AccessToken": "hours",
+        "IdToken": "minutes",
+        "RefreshToken": "days"
+      },
+      "UserPoolId": "local_6JMrAf1i"
     }
   }
 }

@@ -16,14 +16,13 @@ export class InfrastructureStack extends cdk.Stack {
             compatibleRuntimes: [Runtime.NODEJS_20_X]
         });
 
-        const rootDir = path.resolve(__dirname, '../../')
         const lambdaAppDir = path.resolve(__dirname, '../../lambdas')
         const aLambda: nodeLambda.NodejsFunction =
             new nodeLambda.NodejsFunction(this, 'ALambda', {
                 functionName: `aLambda`,
                 runtime: lambda.Runtime.NODEJS_20_X,
                 layers: [dependenciesLayer],
-                depsLockFilePath: path.join(rootDir, 'yarn.lock'),
+                depsLockFilePath: path.join(lambdaAppDir, 'yarn.lock'),
                 entry: path.join(lambdaAppDir, 'lambda-a/bin/a.js'),
                 memorySize: 1024,
                 handler: 'handler',
@@ -37,7 +36,7 @@ export class InfrastructureStack extends cdk.Stack {
                 functionName: `bLambda`,
                 runtime: lambda.Runtime.NODEJS_20_X,
                 layers: [dependenciesLayer],
-                depsLockFilePath: path.join(rootDir, 'yarn.lock'),
+                depsLockFilePath: path.join(lambdaAppDir, 'yarn.lock'),
                 entry: path.join(lambdaAppDir, 'lambda-b/bin/b.js'),
                 memorySize: 1024,
                 handler: 'handler',

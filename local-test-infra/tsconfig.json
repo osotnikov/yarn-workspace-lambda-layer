@@ -4,13 +4,8 @@
     "inlineSourceMap": true,
     "inlineSources": true,
     "module": "commonjs",
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
     "strict": false,
     "target": "ES2018",
-    "typeRoots": ["../node_modules/@types"],
     "outDir": "bin"
   },
   "exclude": ["bin", "cdk.out", "**/__tests__"]

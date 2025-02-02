@@ -1,0 +1,16 @@
+{
+  "name": "yarn-lambdas",
+  "private": true,
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn workspaces run build",
+    "layer": "sh deps-layer.sh",
+    "test": "yarn workspaces run test --passWithNoTests"
+  },
+  "workspaces": [
+    "lambda-common",
+    "lambda-a",
+    "lambda-b"
+  ]
+}

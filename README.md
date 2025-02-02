@@ -17,7 +17,7 @@ Yarn workspaces and Lambda layers can be combined to provide a seamless dependen
 
 ## Example
 
-This repo demonstrates the use of Yarn workspaces with Lambda layers using two Lambdas (`lambda-a` and `lambda-b`), one shared NPM package (`date-fns`), one local utility (`util-logger`) and one Lambda layer (`lambda-layer`).
+This repo demonstrates the use of Yarn workspaces with Lambda layers using two Lambdas (`lambda-a` and `lambda-b`), one shared NPM package (`date-fns`), one local utility (`util-index`) and one Lambda layer (`lambda-layer`).
 
 <p align="center">
   <img width="568" alt="yarn-workspace-lambda-layer-example" src="https://user-images.githubusercontent.com/1913316/77856931-7825f800-71f2-11ea-980e-d1c966ce2294.png">

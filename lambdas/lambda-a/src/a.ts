@@ -11,13 +11,13 @@ import {
   // GetCommand,
 } from "@aws-sdk/lib-dynamodb";
 import { addDays } from "date-fns";
-import { logger } from "/opt/nodejs/lambda-common";
+import { customLog } from "@osotnikov/lambda-common";
 import { UserDto } from "./UserDto";
 
 export const handler: APIGatewayProxyHandler = async (event: APIGatewayProxyEventBase<APIGatewayEventDefaultAuthorizerContext>): Promise<APIGatewayProxyResult> => {
   const tomorrow = addDays(new Date(), 1);
   event.body;
-  logger(tomorrow);
+  customLog(tomorrow);
 
   const client = new DynamoDBClient({ endpoint: "http://ddb:8000" });
   const dynamo: DynamoDBDocumentClient = DynamoDBDocumentClient.from(client);
